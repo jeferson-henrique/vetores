@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    float valor[3];
+
+    printf("informe as duas notas: ");
+    scanf("%f",&valor[0]);
+    scanf("%f",&valor[1]);
+    
+
+    valor[2] = valor[0] + valor[1]  / 2;
+
+    printf("\nA media do aluno foi %.1f",valor[2]);
+    
+    if( valor[2]>=6){
+        printf(" Aprovado");
+    }
+    else{
+        printf(" Reprovado");
+    }
+
+    
+    return 0;
+}
