@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(){
+
+float vetor[5];
+
+printf ("\n\tquantos carros foram vendidos:  ");
+scanf ("%f",& vetor[0]);
+
+printf ("\n\tinforme o valor total de vendas:  ");
+scanf ("%f",& vetor[1]);
+
+printf ("\n\tinforme o salario fixo:  ");
+scanf ("%f",& vetor[2]);
+
+printf ("\n\tqual o valor por carro vendido:  ");
+scanf ("%f",& vetor[3]);
+
+vetor[4] = vetor[2] + vetor[3] + vetor[1]*0.05;
+
+printf ("\n\to salario de josirleison é R$%.2f", vetor[4]);
+
+
+return 0;
+
+}
