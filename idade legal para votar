@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int valor[2];
+    
+    printf("Informe o ano de nascimento: ");
+    scanf("%d",&valor[0]);
+    
+    valor[1] = 2022 - valor[0];
+    if (valor[1] >= 16){
+        printf("O cidadao pode votar");
+    } else{
+        printf("O cidadao nao tem idade legal para votar");
+    }
+    return 0;
+}
